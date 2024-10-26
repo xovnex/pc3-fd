@@ -1,38 +1,115 @@
 .App {
   text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #6a71f1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section {
+  margin: 20px 0;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homepage {
+  background-color: #eef2ff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about-us {
+  background-color: #e0f7fa;
+}
+
+.catalog {
+  background-color: #fff3e0;
+}
+
+.contact-form {
+  background-color: #ffe0b2;
+}
+
+.weather {
+  background-color: #f0f4c3;
+}
+
+h1,
+h2 {
+  margin: 0 0 20px;
+  color: #333;
+}
+
+.video-container,
+.map-container {
+  margin-top: 20px;
+}
+
+.filter-input {
+  margin-bottom: 20px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.product-grid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.product-card {
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+form label,
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
 }
